@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  max-width: 1180px;
+  margin: 0 auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul,ol{
+  list-style-type: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a{
+  text-decoration: none;
+}
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
+  padding: 20px;
+}
+.nav{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+.title1{
+  a{
+    color: white;
+  }
+}
+.nav__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  select{
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+  }
+}
+.nav__item{
+  margin-left: 50px;
+  a{
+    color: white;
+  }
+ 
+}
+.nav__item > a:hover{
+  border-bottom: 2px solid white;
+}
+.list__items > img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.section{
+  padding-top: 10rem;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.title{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 30px;
+}
+.list__items > p{
+  width: 200px;
+  margin: 0 auto;
+}
+.list__items > h2{
+  transform: translateX(45px);
+}
+.list__items{
+  margin-top: 30px;
+  border-radius: 20px;
+  height: 500px;
+  width: 300px;
+}
+.sale{
+  color: rgb(245, 147, 1); 
+}
+.list__items>button{
+  border: none;
+  background-color: black;
   color: white;
+  padding: 13px;
+  border-radius: 5px;
+  transform: translateX(45px);
+  margin-top: 10px;
+  font-weight: 600;
 }
-
-.App-link {
-  color: #61dafb;
+.sector{
+  margin-top: 50px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.my__name{
+  color: white;
 }
